@@ -1,0 +1,352 @@
+  button{background: linear-gradient(to right, #1E3A8A, #3B82F6);}
+.packages .img img{
+    width: 100px;
+}
+.scroll-container {
+    display: flex;
+    gap: 16px;
+    overflow-x: auto;
+    padding: 16px;
+    width: 100%;
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch; /* Ensures smooth touch scrolling */
+  }
+
+  /* Hide scrollbar */
+  .scroll-container::-webkit-scrollbar {
+    display: none;
+  }
+
+  .scroll-container {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+
+  .card {
+    flex: 0 0 auto;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    width: 300px;
+    text-align: center;
+    scroll-snap-align: start;
+  }
+
+  .card img {
+    width: 100%;
+    height: 200px; /* Fixed height */
+    object-fit: cover; /* Ensures the image fits nicely while maintaining its aspect ratio */
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+  }
+
+  .card h3 {
+    margin: 16px 0 8px;
+  }
+
+  .card p {
+    margin: 8px 0;
+    font-size: 16px;
+    color: #555;
+  }
+
+  .card .buttons {
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+    margin: 16px 0;
+  }
+
+  .card button {
+    padding: 8px 16px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+  }
+
+  .card .buy-now {
+    /* background-color: #b01afe; */
+    background: linear-gradient(135deg, #af1bfd, #7929e1);
+    color: #fff;
+  }
+
+  .card .details {
+    background-color: #6c757d;
+    color: #fff;
+  }
+  .buy-now,.details{
+    background-color: #b01afe;
+  }
+  .extra{
+    width: 100%;
+    height: 50px;
+  }
+  .hero-section {
+    margin-top: 20px;
+    text-align: center;
+  }
+
+  .hero-section h1 {
+    font-size: 3rem;
+    color: #002147;
+    font-weight: bold;
+  }
+
+  .hero-section p {
+    font-size: 1.2rem;
+    color: #555;
+    max-width: 800px;
+    margin: 0 auto 20px;
+  }
+
+  .rome-text {
+    font-size: 5rem;
+    font-weight: bold;
+    text-align: center;
+    color: #000;
+    margin: 20px 0;
+    padding: 30px;
+  }
+
+  .image-gallery {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    padding: 20px;
+  }
+
+  .gallery-image {
+    width: 100%;
+    max-width: 300px;
+    height: 200px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    object-fit: cover;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+
+  .gallery-image:hover {
+    transform: scale(1.5);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
+    z-index: 10;
+  }
+  .container-box {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.2);
+    max-width: 1000px;
+    margin: 50px auto;
+  }
+
+  .book-section {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  .book-section h5 {
+    font-weight: bold;
+    font-size: 1.2rem;
+    margin-bottom: 5px;
+  }
+
+  .book-section small {
+    color: #555;
+    font-size: 0.9rem;
+  }
+
+  .ticket-input {
+    text-align: center;
+  }
+
+  .ticket-input input {
+    width: 50px;
+    margin-right: 10px;
+    text-align: center;
+    font-weight: bold;
+  }
+
+  .ticket-input span {
+    margin-right: 10px;
+    font-size: 1.2rem;
+  }
+
+  .location-card {
+    background: linear-gradient(to right, #1E3A8A, #3B82F6);
+    color: white;
+    border-radius: 10px;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .location-card h6 {
+    font-weight: bold;
+    font-size: 1rem;
+  }
+
+  .location-card p {
+    font-size: 1.2rem;
+    margin: 0;
+  }
+
+  /* Airplane Animation */
+  .airplane {
+    font-size: 2rem;
+    position: relative;  
+    animation: fly 5s linear infinite;
+  }
+
+  @keyframes fly {
+    0% {
+      left: -50px;
+      transform: rotate(10deg);
+    }
+    50% {
+      left: 50%;
+      transform: rotate(0deg);
+    }
+    100% {
+      left: 100%;
+      transform: rotate(-10deg);
+    }
+  }
+
+
+  @media (max-width: 768px) {
+    .location-card {
+      flex-direction: column;
+      text-align: center;
+    }
+
+    .right-box {
+      margin-top: 20px;
+    }
+  }
+  @media (max-width: 768px) {
+    .hero-section h1 {
+      font-size: 2rem;
+    }
+
+    .hero-section p {
+      font-size: 1rem;
+    }
+
+    .rome-text {
+      font-size: 3rem;
+    }
+
+    .image-gallery {
+      flex-direction: column;
+    }
+  }
+  .tour-card {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    max-width: 900px;
+    margin: 50px auto;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap; /* Allow elements to wrap on smaller screens */
+  }
+
+  .tour-image img {
+    width: 400px;  /* Fixed width */
+    height: 250px; /* Fixed height */
+    object-fit: cover; /* Ensure the image covers the defined area without distortion */
+    border-radius: 10px;
+  }
+
+  .tour-info h2 {
+    font-size: 1.8rem;
+    color: #333;
+    margin-bottom: 10px;
+  }
+
+  .tour-info p {
+    font-size: 1rem;
+    color: #777;
+    margin-bottom: 15px;
+  }
+
+  .tour-price {
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+
+  .btn-buy {
+    background-color: #14284b;
+    color: #fff;
+    font-size: 1rem;
+    font-weight: bold;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+  }
+
+  .btn-buy:hover {
+    background-color: #0f1f3a;
+    color: #f9f9f9;
+  }
+
+  /* Responsive adjustments */
+  @media (max-width: 768px) {
+    .tour-card {
+      flex-direction: column;
+      align-items: flex-start;
+      margin: 10px 10px;
+    }
+    .tour-image{
+      width: 100%;
+      text-align: center;
+    }
+    .tour-info{
+      width: 100%;
+      text-align: center;
+    }
+    .tour-image img {
+      width: 100%; /* Make the image take full width on small screens */
+      height: auto; /* Adjust height automatically */
+    }
+
+    .tour-info h2 {
+      font-size: 1.5rem; /* Smaller title on small screens */
+    }
+
+    .tour-price {
+      font-size: 1.2rem; /* Smaller price on small screens */
+    }
+
+    .btn-buy {
+      font-size: 0.9rem; /* Smaller button text on small screens */
+    }
+  }
+
+  /* Extra small screens (phones in portrait mode) */
+  @media (max-width: 480px) {
+    .tour-card{
+      margin: 10px 10px;
+    }
+    .tour-info h2 {
+      font-size: 1.2rem;
+    }
+
+    .tour-info p {
+      font-size: 0.9rem;
+    }
+
+    .tour-price {
+      font-size: 1rem;
+    }
+
+    .btn-buy {
+      font-size: 0.8rem;
+      padding: 8px 16px;
+    }
+  }
